@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hersection.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container1">
+        <!-- series of three images
+        right and left arrows appears at the side of the images  <!-- overlay box with an h1 and p on each image overlaying them
+        arrows are opaque -->
+        <!-- images occupy about 90% of section height -->
+        <div class="slideshow">
+                <div class="slideshow">
+                    <div class="slide">
+                        <img src="./header1.png" alt="tentdisplay" class="headerImgs">
+                        <div class="overlay">
+                            <h2>EVENTS OF ALL SIZES</h2>
+                            <p>Welcome! At Tent Rental USA, we strive for the quality of our services to match the quality of our tents. Book now to make your event unforgetablle.  </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./header2.png" alt="tentdisplay" class="headerImgs">
+                        <div class="overlay">
+                            <h2>Your Heading</h2>
+                            <p>Your Text</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./header3.png" alt="tentdisplay" class="headerImgs">
+                        <div class="overlay">
+                            <h2>Your Heading</h2>
+                            <p>Your Text</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+        </div>
+        <p>Owensboro's #1 Source for Party Rentals, Tent Rentals, and Event Services</p>
+    </div>
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slides[slideIndex-1].style.display = "flex"; 
+    slides[slideIndex-1].className += " fade";
+}
+
+document.querySelector(".prev").addEventListener("click", function() {
+    plusSlides(-1);
+});
+
+document.querySelector(".next").addEventListener("click", function() {
+    plusSlides(1);
+});
+
+    </script>
+</body>
+</html>

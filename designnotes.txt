@@ -1,0 +1,5 @@
+spacing and image layout drawn from sample
+Primary colors of logo
+
+: grab three primary colors and feed to chat gpt for font and color ideas
+: use placeholders for now and replace

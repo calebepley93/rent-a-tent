@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 16px;
+    line-height: 1.5; 
+    color: #333; 
+    background: #f5f5f5;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.containerr {
+    width: 100%;
+    /* height: 15vh; */
+    background-color: white;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-right: 3vh;
+} 
+
+.mobile-header-img-cont {
+    height: auto;
+    width: 15vw;
+    align-self: center;
+}
+
+.mobile-header-img-cont img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+    margin-right: 4vh;
+    padding: 10px;
+    
+  }
+  
+  .hamburger-menu:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+  
+  .hamburger-menu div {
+    width: 5vw;
+    height: 3px;
+    background-color: teal;
+    border-radius: 1px;
+    margin: 2px;
+    transition: 0.2s;
+    min-width: 20px;
+    min-height: 3px;
+    /* margin-right: 3vw; */
+  }
+  
+  /* .hamburger-menu div:hover {
+    background-color: slategray;
+  } */
+
+
+  .overlayMenu {
+    height: 15vh;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0);
+    overflow-x: hidden;
+    transition: 0.5s;
+  } 
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlayMenu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlayMenu a:hover, .overlayMenu a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlayMenu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    transition: .3s;
+    color: #818181;
+  }
+  
+  .overlayMenu .closebtn:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+

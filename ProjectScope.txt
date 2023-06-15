@@ -1,0 +1,20 @@
+Objective 
+
+Page-by-page mimic of a tent rental website that can be used for Noah's business
+
+Copy: https://ustentrental.com/
+
+1. Home page
+
+
+
+
+2. About page
+3. Booking page
+4. Contact Us Page
+5. FAQ Page
+
+
+6/12 goals
+
+redo overlay section and make it mobially 

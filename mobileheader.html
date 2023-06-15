@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mobileheader.css">
+</head>
+<body>
+    <div id="overlay" class="overlayMenu">
+        <div class="closebtn">&times;</div>
+        <ul class="overlay-content">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <header class="containerr">
+        <div class="mobile-header-img-cont">
+            <img src="./tentlogo.png" alt="tentlogo">
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            document.getElementById('overlay').style.width = '100%';
+        });
+
+       // document.querySelector('.overlay').addEventListener('click', function() {
+          //  document.getElementById('overlay').style.width = '0%';
+       // });
+
+        document.querySelector('.closebtn').addEventListener('click', function() {
+            document.getElementById('overlay').style.width = '0%';
+        });
+    </script>
+</body>
+</html>

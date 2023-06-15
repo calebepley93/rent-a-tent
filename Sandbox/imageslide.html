@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./imageslide.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <section class="sliderCont"></section>
+        <div class="slider">
+            <div><img src="./SliderImgs/rentaltent1.png" alt="Image 1"></div>
+            <div><img src="./SliderImgs/rentaltentaward.png" alt="Image 2"></div>
+            <div><img src="./SliderImgs/rentaltent2.png" alt="Image 3"></div>
+            <div><img src="./SliderImgs/rentaltent3.png" alt="Image 4"></div>
+            <div><img src="./SliderImgs/rentaltent4.png" alt="Image 5"></div>
+            <div><img src="./SliderImgs/rentalward2.png" alt="Image 6"></div>
+            <div><img src="./SliderImgs/rentaltent5.png" alt="Image 7"></div>
+            <div><img src="./SliderImgs/rentaltent6.png" alt="Image 8"></div>
+            <div><img src="./SliderImgs/renaltent7.png" alt="Image 9"></div>
+            <div><img src="./SliderImgs/rentaltent8.png" alt="Image 10"></div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: false,  // Disable dot navigation
+                infinite: true,  // Loop the slides
+                speed: 500,  // Transition speed
+                slidesToShow: 6,  // Number of slides to show at a time
+                slidesToScroll: 1,  // Number of slides to scroll at a time
+                autoplay: true,  // Enable auto play
+                autoplaySpeed: 1000,  // Time for each slide to be shown
+                fade: false,  // Enable fade transition. Note: slidesToShow and slidesToScroll should be set to 1
+            });
+        });
+    </script> 
+</body>
+</html>

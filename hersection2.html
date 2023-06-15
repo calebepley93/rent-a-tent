@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./hersection2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./header1.png" alt="tentdisplay" class="headerImgs">
+            <div class="overlay">
+              <h2>EVENTS OF ALL SIZES</h2>
+              <p>Welcome! At Tent Rental USA, we strive for the quality of our services to match the quality of our tents. Book now to make your event unforgetablle.  </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./header2.png" alt="tentdisplay" class="headerImgs">
+            <div class="overlay">
+              <h2>MAKE YOUR NEXT EVENT A BREEZE</h2>
+              <p>Why stress when you can impress? Our tents provide a cool, comfortable space for your guests. Reserve today for a hassle-free experience. </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./header3.png" alt="tentdisplay" class="headerImgs">
+            <div class="overlay">
+              <h2>SUPPORT LOCAL BUSINESS</h2>
+              <p>Our small, family-owned business takes pride in helping the community make their events awesome. Schedule your rental now. </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="pcontainer">
+        <p class="headerTag">Owensboro's #1 Source for Party Rentals, Tent Rentals, and Event Services</p>
+      </div>
+<script>
+
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'fade',
+          speed: 500,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        });
+      
+      
+</script>      
+    
+</body>
+</html>
