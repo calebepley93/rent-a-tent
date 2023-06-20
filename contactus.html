@@ -20,31 +20,30 @@
         </ul>
     </nav>
     <header class="containerr">
-        <div class="mobile-header-img-cont">
-            <img src="./tentlogo.png" alt="tentlogo">
-        </div>
-        <div class="hamburger-menu" id="hamburger-menu">
+        <div class="mobile-span">
+          <div class="hamburger-menu" id="hamburger-menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
+          </div>
+          <div class="mobile-header-img-cont">
+              <img src="./Imgs/transparentlogo.webp" alt="tentlogo">
+          </div>
         </div>
     </header> 
     <header class="header">
         <div class="topSection">
-            <i class="fab fa-facebook-f"></i>
+            <!-- <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+            <i class="fab fa-instagram"></i> -->
+            <p class="facebook"><i class="fab fa-facebook"></i>Follow us on <a href="https://www.facebook.com/profile.php?id=100092741207388">Facebook!</a></p>
         </div>
         <div class="midSection">
             <div class="logoTitle">
-                <img src="tentlogo.png" alt="tentlogo">
-                <h1>Tent Rental USA</h1>
+                <img src="./Imgs/transparentlogo.webp" alt="tentlogo">
+                <!-- <h1>Rent-A-Tent</h1> -->
             </div>
             <div class="searchPhone">
-                <div class="searchbox">
-                    <input type="text" class="search" placeholder="Search products...">
-                    <i class="fa fa-search search-icon"></i>
-                </div>
                 <p class="phoneNum">(555) 123 4567</p>
             </div>
         </div>
@@ -55,105 +54,98 @@
         </div>
     </header>
     <div class="wideFlexdiv">
-    <section class="ContactUsSection">
-        <div class="contactUsContainer">
-            <h1 class="contactHeader">Contact Us</h1>
-            <div class="phoneNumber">(555) 123 4567</div>
-            <p class="contactText">Reach out and let us know what we can to help make your next event a success!</p>
-            <div class="tntImgflexbox">
-                <div class="tentImgContainer">
-                    <img src="./Sandbox/SliderImgs/rentaltent1.png" alt="tent1">
+        <section class="ContactUsSection">
+            <div class="contactUsContainer">
+                <h1 class="contactHeader">Contact Us</h1>
+                <div class="contact-us-phone">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div class="phoneNumber">(555) 123 4567</div>
                 </div>
-                <div class="tentImgContainer">
-                    <img src="./Sandbox/SliderImgs/rentaltent2.png" alt="tent1">
-                </div>
-                <div class="tentImgContainer">
-                    <img src="./Sandbox/SliderImgs/rentaltent3.png" alt="tent1">
-                </div>
+                <p class="contactText">Reach out and let us know what we can to help make your next event a success!</p>
             </div>
-        </div>
-    </section>
-    <section class="contactForm">
-        <div class="contactFormContainer">
-            <form action="contactus.php" method="post">
-                <div class="formGroup">
-                    <label for="name">Name<span class="star">*</span></label>
-                    <div class="nameContainer">
-                        <div class="nameFlex">
-                            <input type="text" name="name" id="name">
-                            <label for="firstname">First</label>
-                        </div>
-                        <div class="nameFlex">
-                            <input type="text" name="name" id="name">
-                            <label for="lastname">Last</label>
+        </section>
+        <section class="contactForm">
+            <div class="contactFormContainer">
+                <form action="contactus.php" method="post">
+                    <div class="formGroup">
+                        <label for="name">Name<span class="star">*</span></label>
+                        <div class="nameContainer">
+                            <div class="nameFlex">
+                                <input type="text" name="name" id="name">
+                                <label for="firstname">First</label>
+                            </div>
+                            <div class="nameFlex">
+                                <input type="text" name="name" id="name">
+                                <label for="lastname">Last</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="formGroup">
-                    <div class="nameFlex2">
-                        <label for="email">Email<span class="star">*</span></label>
-                        <input type="email" name="email" id="email">
+                    <div class="formGroup">
+                        <div class="nameFlex2">
+                            <label for="email">Email<span class="star">*</span></label>
+                            <input type="email" name="email" id="email">
+                        </div>
                     </div>
-                </div>
-                <div class="formGroup">
-                    <div class="nameFlex2">
-                        <label for="phone">Phone Number<span class="star">*</span></label>
-                        <input type="tel" name="phone" id="phone">
+                    <div class="formGroup">
+                        <div class="nameFlex2">
+                            <label for="phone">Phone Number<span class="star">*</span></label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
                     </div>
-                </div>
-                <div class="formGroup">
-                    <div class="nameFlex2">
-                        <label for="message">Message<span class="star">*</span></label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <div class="formGroup">
+                        <div class="nameFlex2">
+                            <label for="message">Message<span class="star">*</span></label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
                     </div>
-                </div>
-                <button type="submit" name="submit" class="submitButton">Submit</button>
-            </form>
+                    <button type="submit" name="submit" class="submitButton">Submit</button>
+                </form>
+            </div>
+        </section>
         </div>
-    </section>
-    </div>
-    <section class="sliderCont"></section>
-        <div class="slider">
-            <div><img src="./Sandbox/SliderImgs/rentaltent1.png" alt="Image 1"></div>
-            <div><img src="./Sandbox/SliderImgs/rentaltentaward.png" alt="Image 2"></div>
-            <div><img src="./Sandbox/SliderImgs/rentaltent2.png" alt="Image 3"></div>
-            <div><img src="./Sandbox/SliderImgs/rentaltent3.png" alt="Image 4"></div>
-            <div><img src="./Sandbox/SliderImgs/rentaltent4.png" alt="Image 5"></div>
-            <div><img src="./Sandbox/SliderImgs/rentalward2.png" alt="Image 6"></div>
-            <div><img src="./Sandbox/SliderImgs/rentaltent5.png" alt="Image 7"></div>
-            <div><img src="./Sandbox/SliderImgs/rentaltent6.png" alt="Image 8"></div>
-            <div><img src="./Sandbox/SliderImgs/renaltent7.png" alt="Image 9"></div>
-            <div><img src="./Sandbox/SliderImgs/rentaltent8.png" alt="Image 10"></div>
-        </div>
-    </section>
-    <section class="footercont">
-        <div class="flexCont1">
-            <div class="logoCont">
-                <div class="imgI">
-                    <div class="footer-img-cont">
-                        <img src="./tentlogo.png" alt="tentlogo">
-                    </div>
-                    <div class="i-container">
-                     <i class="fab fa-facebook-f"></i>
-                     <i class="fab fa-twitter"></i>
-                     <i class="fab fa-instagram"></i>
+        <section class="sliderCont"></section>
+            <div class="slider">
+                <div><img src="./Sandbox/SliderImgs/rentaltent1.png" alt="Image 1"></div>
+                <div><img src="./Sandbox/SliderImgs/rentaltentaward.png" alt="Image 2"></div>
+                <div><img src="./Sandbox/SliderImgs/rentaltent2.png" alt="Image 3"></div>
+                <div><img src="./Sandbox/SliderImgs/rentaltent3.png" alt="Image 4"></div>
+                <div><img src="./Sandbox/SliderImgs/rentaltent4.png" alt="Image 5"></div>
+                <div><img src="./Sandbox/SliderImgs/rentalward2.png" alt="Image 6"></div>
+                <div><img src="./Sandbox/SliderImgs/rentaltent5.png" alt="Image 7"></div>
+                <div><img src="./Sandbox/SliderImgs/rentaltent6.png" alt="Image 8"></div>
+                <div><img src="./Sandbox/SliderImgs/renaltent7.png" alt="Image 9"></div>
+                <div><img src="./Sandbox/SliderImgs/rentaltent8.png" alt="Image 10"></div>
+            </div>
+        </section>
+        <section class="footercont">
+            <div class="flexCont1">
+                <div class="logoCont">
+                    <div class="imgI">
+                        <div class="footer-img-cont">
+                            <img src="./Imgs/transparentlogo.webp" alt="tentlogo">
+                        </div>
+                        <div class="i-container">
+                            <p class="facebook1"><i class="fab fa-facebook"></i>Follow us on <a href="https://www.facebook.com/profile.php?id=100092741207388">Facebook!</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="contactContainer">
-            <div class="iInfo">
-                <i class="fas fa-phone"></i>
-                <p>(555) 123 4567</p>
+            <div class="contactContainer">
+                <div class="iInfo">
+                    <i class="fas fa-phone"></i>
+                    <p>(555) 123 4567</p>
+                </div>
+                <div class="iInfo">
+                    <i class="fas fa-envelope"></i>
+                    <p>tentrentalus@yahoo.com</p>
+                </div>
             </div>
-            <div class="iInfo">
-                <i class="fas fa-envelope"></i>
-                <p>tentrentalus@yahoo.com</p>
-            </div>
-        </div>
       </section>
     <footer class="copy">
-      <p>COPYRIGHT © 2023 TENT RENTAL USA. ALL RIGHTS RESERVED. </p>
+      <p>COPYRIGHT © 2023 RENT-A-TENT. ALL RIGHTS RESERVED. </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
