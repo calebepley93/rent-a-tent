@@ -12,11 +12,16 @@ body {
 }
 
 .ContactUsSection {
-    background-color: #f5f5f5;
+    background-color: white;
     width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.contact-us-phone {
+    display: flex;
     align-items: center;
 }
 
@@ -26,9 +31,13 @@ body {
     display: flex;
     /* align-items: first baseline; */
     flex-direction: column;
-    justify-content: center;
+    justify-items: flex-start;
     align-items: center;
     text-align: center;
+}
+
+.green-circle {
+    color: rgb(52, 73, 35);
 }
 
 .tentImgContainer {
@@ -84,7 +93,7 @@ body {
 .phoneNumber {
     font-size: 24px;
     font-weight: 300;
-    margin-left: 20px;
+    margin-left: 16px;
     width: 90%;
 }
 
@@ -107,6 +116,7 @@ body {
 .contactFormContainer {
     width: auto;
     padding: 20px;
+    background-color: white;
 }
 
 .nameFlex {
@@ -163,6 +173,7 @@ body {
     background: rgb(52, 73, 35);
     color: white;
     border-radius: 6px;
+    border: 1px solid grey;
 }
 
 .submitButton:hover {
@@ -177,7 +188,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
 .slider div img {

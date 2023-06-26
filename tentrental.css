@@ -521,7 +521,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: black;
+    opacity: 90%;
+}
+
+.iInfo i {
     color: grey;
+    opacity: 90%;
 }
 
 .iInfo:nth-of-type(1) {
@@ -631,11 +637,17 @@ body {
 
 .facebook a {
     text-decoration: none;
+    color: inherit;
 }
 
 .facebook i {
     color: white;
     opacity: 90%;
+}
+
+.facebook1 a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .facebook1 {
