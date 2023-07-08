@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria;
+    background-color: whitesmoke;
+    color: rgb(60, 60, 60);
+}
+
+
+
+
+.about-us-text {
+    display: flex;
+    padding: 90px 48px;
+    background-color: whitesmoke;
+}
+
+
+.about-slider-container {
+    width: 50%;
+}
+
+
+.slider {
+    width: 100%;
+}
+
+.slider-nav-container {
+    width: 100%;
+    padding: 0 24px;
+}
+
+.text-section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.text-section h3 {
+    margin-block-end: 0.83em;
+}
+
+.text-section p {
+    font-size: 16px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    line-height: 1.5;
+}
+
+
+.slick-dots {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots li button:before {
+    line-height: 20px;
+    opacity: .25;
+    color: black;
+    font-size: 12px;  /* Adjust this value to increase/decrease dot size */
+    content: '•';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: rgb(60, 60, 60);
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-us-text {
+        flex-direction: column;
+        padding: 48px 24px;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .about-slider-container {
+        width: 100%;
+    }
+
+    .aboutus-large-img-container {
+        width: 100%;
+    }
+
+    .aboutus-large-img-container img {
+        width: 100%;
+    }
+
+}

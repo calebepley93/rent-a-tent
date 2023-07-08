@@ -69,7 +69,8 @@ body {
 
 .swiper-button-next, .swiper-button-prev {
     z-index: 2 !important;
-    position: relative; /* if not already positioned */
+    position: relative; 
+    color: rgb(158, 158, 158) !important;
 }
 
 

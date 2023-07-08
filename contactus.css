@@ -16,24 +16,24 @@ body {
     width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.wideFlexdiv {
+    padding: 70px 40px;
+    background-color: white;
+    display: flex;
 }
 
 .contact-us-phone {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .contactUsContainer {
     width: 100%;
-    /* max-width: 1200px; */
     display: flex;
-    /* align-items: first baseline; */
     flex-direction: column;
-    justify-items: flex-start;
-    align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .green-circle {
@@ -63,7 +63,6 @@ body {
 .contactText {
     font-size: 16px;
     font-weight: 300;
-    margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 90%;
@@ -85,15 +84,11 @@ body {
 .contactHeader {
     font-size: 30px;
     font-weight: 600;
-    margin-left: 20px;
-    margin-top: 4vh;
     width: 90%;
 }
 
 .phoneNumber {
     font-size: 24px;
-    font-weight: 300;
-    margin-left: 16px;
     width: 90%;
 }
 
@@ -115,8 +110,8 @@ body {
 }
 .contactFormContainer {
     width: auto;
-    padding: 20px;
     background-color: white;
+    margin-left: 3%;
 }
 
 .nameFlex {
@@ -181,6 +176,16 @@ body {
     cursor: pointer;
 }
 
+.contact-image-container {
+    width: 190px;
+}
+
+.contact-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .sliderCont {
     width: 100%;
     height: auto;
@@ -205,39 +210,50 @@ body {
     align-items: center;
 }
 
-@media screen and (min-width: 950px) {
+.contact-images {
+    width: 100%;
+    display: flex;
+}
+
+.contact-image-container:first-of-type {
+    margin-right: 10px;
+}
+
+.contact-image-container:last-of-type {
+    margin-left: 10px;
+}
+
+
+
+@media screen and (max-width: 950px) {
     .wideFlexdiv {
-        display: flex;
-        /* justify-content: center; */
-        /* align-items: center; */
+        flex-direction: column;
         width: 100%;
-        /* padding: 20px; */
+        padding: 40px;
     }
 
-    /* .contactUsSection {
-        flex-basis: 45%;
-    } */
-
-    .contactForm {
-        flex-basis: 50%;
+   
+    .contactFormContainer {
+        margin-left: 0;
     }
+
+   
 
     .contactFormContainer {
-        padding-left: 0;
-        padding-bottom: 5vh;
-        padding-top: 5vh;
-        /* width: 100%; */
+        padding: 0;
+        margin-top: 24px;
     }
 
 
     .phoneNumber {
         font-size: 40px;
+        font-weight: normal;
         width: auto;
     }
 
     .contactText {
         font-size: 20px;
-        width: 50%;
+        width: 80%;
     }
 
     .tentImgContainer {
@@ -247,6 +263,7 @@ body {
     .contactHeader {
         font-size: 40px;
         width: auto;
+        margin-top: 0;
     }
 
     
