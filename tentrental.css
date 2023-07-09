@@ -332,16 +332,14 @@ body {
 .containerr {
     width: 100%;
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     display: none;
+    padding: 40px 24px;
 } 
 
 .mobile-header-img-cont {
     height: auto;
     max-width: 120px;
-    align-self: center;
+    justify-self: center;
 }
 
 .mobile-header-img-cont img {
@@ -357,14 +355,11 @@ body {
     cursor: pointer;
     background-color: white;
     position: relative;
-    padding: 10px;
-    margin-left: 3vw;
   }
 
   .mobile-span {
-    flex-basis: 60%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   
   .hamburger-menu:hover {
@@ -373,14 +368,12 @@ body {
   }
   
   .hamburger-menu div {
-    width: 5vw;
+    width: 25px;
     height: 3px;
     background-color: rgb(52, 73, 35);
-    border-radius: 1px;
+    border-radius: 2px;
     margin: 2px;
     transition: 0.2s;
-    min-width: 20px;
-    min-height: 3px;
   }
   
 
@@ -666,6 +659,7 @@ body {
         height: auto;
         min-width: 20vw;
         align-self: center;
+        justify-self: center;
     }
 
     .headerTag {
@@ -765,12 +759,6 @@ body {
         line-height: 1.1;
     }
 
-    
-
-    .mobile-span {
-        flex-basis: 66%;
-      }
-
 }
 
 @media screen and (max-width: 510px) {
@@ -837,8 +825,8 @@ body {
 
 
     .containerr {
-        display: flex;
-        height: 15vh;
+        display: block;
+       
     }
 
     .overlay {
@@ -892,7 +880,6 @@ body {
 
     .textCont {
         text-align: left;
-        /* width: 70%; */
     }
 
     .copy {
@@ -937,6 +924,7 @@ body {
     .textCont {
         margin-top: 24px;
         padding-bottom: 0;
+        align-items: center;
     }
 
     .cardcontainer {
@@ -964,6 +952,7 @@ body {
     .container2 {
         padding: 40px 24px;
     }
+
 }
 
 @media screen and (max-width: 699px) {

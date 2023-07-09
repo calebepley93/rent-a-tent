@@ -108,6 +108,8 @@ body {
     width: 100%;
 }
 
+
+
 .text-section h2 {
     font-size: 36px;
     font-weight: 900;
@@ -159,6 +161,20 @@ body {
     color: rgb(60, 60, 60);
     display: block;
 }
+
+
+
+.text-section a {
+    text-decoration: none;
+    color: #7ca673;
+}
+
+.text-section a:hover {
+    text-decoration: underline;
+}
+
+
+
 
 
 @media screen and (min-width: 500px) {
