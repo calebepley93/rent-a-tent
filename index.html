@@ -76,8 +76,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
           </div>
           <div class="pcontainer">
             <p class="headerTag">Owensboro's #1 Source for Party Rentals, Tent Rentals, and Event Services</p>
@@ -108,7 +106,7 @@
         </div>
     </div>
     <section class="cardcontainer">
-      <h2 class="specialEvents">Perfect For Your Event Type</h2>
+      <h2 class="specialEvents">Perfect For Your Next...</h2>
       <h2 class="specialEvents2">Perfect For Your Next...</h2>
       <div class="cardcontainer1">
           <div class="eventcard">
@@ -158,7 +156,7 @@
                       <img src="./Imgs/transparentlogo.webp" alt="tentlogo">
                   </div>
                   <div class="i-container">
-                    <p class="facebook1"><i class="fab fa-facebook"></i>Follow us on <a href="https://www.facebook.com/profile.php?id=100092741207388">Facebook!</a></p>
+                    <p class="facebook1"><a href="https://www.facebook.com/profile.php?id=100092741207388"><i class="fab fa-facebook"></i>Follow us on Facebook!</a></p>
                   </div>
               </div>
           </div>
@@ -183,12 +181,13 @@
 
     $(document).ready(function(){
       $('.slider').slick({
-          dots: false,  // Disable dot navigation
-          infinite: true,  // Loop the slides
+          dots: false,  
+          infinite: true,  
           speed: 500,  // Transition speed
           slidesToShow: 9,  // Number of slides to show at a time
           slidesToScroll: 1,  // Number of slides to scroll at a time
-          autoplay: true,  // Enable auto play
+          autoplay: true,
+          arrows: false,  // Enable auto play
           autoplaySpeed: 2500,  // Time for each slide to be shown
           fade: false,  // Enable fade transition. Note: slidesToShow and slidesToScroll should be set to 1
           responsive: [
