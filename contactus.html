@@ -34,7 +34,7 @@
     </header> 
     <header class="header">
         <div class="topSection">
-            <p class="facebook"><i class="fab fa-facebook"></i>Follow us on <a href="https://www.facebook.com/profile.php?id=100092741207388">Facebook!</a></p>
+            <p class="facebook"><a href="https://www.facebook.com/profile.php?id=100092741207388"><i class="fab fa-facebook"></i>Follow us on Facebook!</a></p>
         </div>
         <div class="midSection">
             <div class="logoTitle">
@@ -132,7 +132,7 @@
                             <img src="./Imgs/transparentlogo.webp" alt="tentlogo">
                         </div>
                         <div class="i-container">
-                            <p class="facebook1"><i class="fab fa-facebook"></i>Follow us on <a href="https://www.facebook.com/profile.php?id=100092741207388">Facebook!</a></p>
+                            <p class="facebook1"><a href="https://www.facebook.com/profile.php?id=100092741207388"><i class="fab fa-facebook"></i>Follow us on Facebook!</a></p>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,8 @@
                 speed: 500,  // Transition speed
                 slidesToShow: 9,  // Number of slides to show at a time
                 slidesToScroll: 1,  // Number of slides to scroll at a time
-                autoplay: true,  // Enable auto play
+                autoplay: true, 
+                arrows: false, 
                 autoplaySpeed: 2500,  // Time for each slide to be shown
                 fade: false,  // Enable fade transition. Note: slidesToShow and slidesToScroll should be set to 1
                 responsive: [
@@ -195,7 +196,7 @@
             document.getElementById('overlay').style.width = '100%';
          });
      
-            document.querySelector('.overlay').addEventListener('click', function() {
+            document.getElementById('overlay').addEventListener('click', function() {
               document.getElementById('overlay').style.width = '0%';
             });
      

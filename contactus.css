@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-}
 
 .ContactUsSection {
     background-color: white;
@@ -96,6 +87,7 @@ body {
     width: 100%;
 }
 
+
 .nameContainer {
     width: 100%;
     display: flex;
@@ -124,6 +116,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 6px 10px;
+    width: 100%;
 }
 
 .nameFlex textarea {
@@ -131,6 +124,14 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 6px 10px;
+}
+
+.nameFlex input, .nameFlex2 input, .nameFlex textarea, .nameFlex2 textarea {
+    width: 100%;
+}
+
+.nameFlex2 textarea {
+    width: 100%;
 }
 
 .star {

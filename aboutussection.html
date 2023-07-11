@@ -151,7 +151,7 @@
             document.getElementById('overlay').style.width = '100%';
          });
      
-            document.querySelector('.overlay').addEventListener('click', function() {
+            document.getElementById('overlay').addEventListener('click', function() {
               document.getElementById('overlay').style.width = '0%';
             });
      
@@ -168,7 +168,8 @@
                 speed: 500,  // Transition speed
                 slidesToShow: 9,  // Number of slides to show at a time
                 slidesToScroll: 1,  // Number of slides to scroll at a time
-                autoplay: true,  // Enable auto play
+                autoplay: true,
+                arrows: false,  
                 autoplaySpeed: 2500,  // Time for each slide to be shown
                 fade: false,  // Enable fade transition. Note: slidesToShow and slidesToScroll should be set to 1
                 responsive: [
