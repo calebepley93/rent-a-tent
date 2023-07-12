@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contactredo.css">
+</head>
+<body>
+    <section class="contact-us-section">
+        <div class="contact-grid-container">
+            <div class="contact-us-image-text">
+                <h1 class="contact-header">Contact Us</h1>
+                <div class="phone-number-big">(812) 431-9817</div>
+                <p class="contact-text">Reach out and let us know what we can to help make your next event a success!</p>
+                <div class="img-flex-container">
+                    <div class="contact-img-contaner">
+                        <img src="./contactimage1.webp" alt="tentimage">
+                    </div>
+                    <div class="contact-img-contaner">
+                        <img src="./contactimage2.webp" alt="tentimage">
+                    </div>
+                    <div class="contact-img-contaner">
+                        <img src="./contactimage3.webp" alt="tentimage">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form action="" class="contact-form" method="POST" data-netlify="true">
+                    <label for="names" class="form-label">Name <span class="red">*</span></label>
+                    <div class="name-line">
+                        <div class="first-name-container">
+                            <input type="text" required class="field-name" id="firstname">
+                            <label for="firstname" class="first-name">First</label>
+                        </div>
+                        <div class="last-name-container">
+                            <input type="text" required class="field-name" id="lastname">
+                            <label for="lastname" class="last-name">Last</label>
+                        </div>
+                    </div>
+                    <label for="email" class="form-label">Email <span class="red">*</span></label>
+                    <input type="email" required name="email" id="email" class="email">
+                    <p class="under-text">Email</p>
+                    <label for="phone" class="form-label">Phone <span class="red">*</span></label>
+                    <input type="tel" required name="phone" id="phone" class="phone">
+                    <label for="Message" class="form-label">Message <span class="red">*</span></label>
+                    <textarea name="message" id="message" required></textarea>
+                    <button id="submit-button" class="submit-button" type="submit" name="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

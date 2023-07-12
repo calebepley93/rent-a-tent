@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="./Imgs/transparentlogo.webp">
-    <link rel="stylesheet" href="./contactus.css">
+    <link rel="stylesheet" href="./Sandbox/contactredo.css">
     <link rel="stylesheet" href="./tentrental.css">
     <title>Contact Us</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
@@ -50,66 +50,49 @@
             <a href="./contactus.html" class="contact">Contact Us</a>
         </div>
     </header>
-    <div class="wideFlexdiv">
-        <section class="ContactUsSection">
-            <div class="contactUsContainer">
-                <h1 class="contactHeader">Contact Us</h1>
-                <div class="contact-us-phone">
-                    <div class="phoneNumber">(812) 431-9817</div>
-                </div>
-                <p class="contactText">Reach out and let us know what we can to help make your next event a success!</p>
-                <div class="contact-images">
-                    <div class="contact-image-container">
-                        <img src="./slideshowimgs/contactimage1.webp" alt="tent">
+    <section class="contact-us-section">
+        <div class="contact-grid-container">
+            <div class="contact-us-image-text">
+                <h1 class="contact-header">Contact Us</h1>
+                <div class="phone-number-big">(812) 431-9817</div>
+                <p class="contact-text">Reach out and let us know what we can to help make your next event a success!</p>
+                <div class="img-flex-container">
+                    <div class="contact-img-contaner">
+                        <img src="./Sandbox/contactimage1.webp" alt="tentimage">
                     </div>
-                    <div class="contact-image-container">
-                        <img src="./slideshowimgs/contactimage2.webp" alt="tent">
+                    <div class="contact-img-contaner">
+                        <img src="./Sandbox/contactimage2.webp" alt="tentimage">
                     </div>
-                    <div class="contact-image-container">
-                        <img src="./slideshowimgs/contactimage3.webp" alt="tent">
+                    <div class="contact-img-contaner">
+                        <img src="./Sandbox/contactimage3.webp" alt="tentimage">
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="contactForm">
-            <div class="contactFormContainer">
-                <form name="contact-form" method="POST" data-netlify="true">
-                    <div class="formGroup">
-                        <label for="name">Name<span class="star">*</span></label>
-                        <div class="nameContainer">
-                            <div class="nameFlex">
-                                <input type="text" name="firstName" id="firstname">
-                                <label for="firstname">First</label>
-                            </div>
-                            <div class="nameFlex">
-                                <input type="text" name="lastName" id="lastname">
-                                <label for="lastname">Last</label>
-                            </div>
+            <div class="contact-form-container">
+                <form action="" class="contact-form" method="POST" data-netlify="true">
+                    <label for="names" class="form-label">Name <span class="red">*</span></label>
+                    <div class="name-line">
+                        <div class="first-name-container">
+                            <input type="text" required class="field-name" id="firstname">
+                            <label for="firstname" class="first-name">First</label>
+                        </div>
+                        <div class="last-name-container">
+                            <input type="text" required class="field-name" id="lastname">
+                            <label for="lastname" class="last-name">Last</label>
                         </div>
                     </div>
-                    <div class="formGroup">
-                        <div class="nameFlex2">
-                            <label for="email">Email<span class="star">*</span></label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                    </div>
-                    <div class="formGroup">
-                        <div class="nameFlex2">
-                            <label for="phone">Phone Number<span class="star">*</span></label>
-                            <input type="tel" name="phone" id="phone">
-                        </div>
-                    </div>
-                    <div class="formGroup">
-                        <div class="nameFlex2">
-                            <label for="message">Message<span class="star">*</span></label>
-                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit" name="submit" class="submitButton">Submit</button>
+                    <label for="email" class="form-label">Email <span class="red">*</span></label>
+                    <input type="email" required name="email" id="email" class="email">
+                    <p class="under-text">Email</p>
+                    <label for="phone" class="form-label">Phone <span class="red">*</span></label>
+                    <input type="tel" required name="phone" id="phone" class="phone">
+                    <label for="Message" class="form-label">Message <span class="red">*</span></label>
+                    <textarea name="message" id="message" required></textarea>
+                    <button id="submit-button" class="submit-button" type="submit" name="submit">Submit</button>
                 </form>
             </div>
-        </section>
         </div>
+    </section>
         <section class="sliderCont"></section>
             <div class="slider">
                 <div><img src="./slideshowimgs/smallslideshow1.webp" alt="Image 1"></div>
